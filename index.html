@@ -47,10 +47,10 @@
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#cultural">Cultural Environmentalism</a></li>
+          <li style='white-space:nowrap'><a href="#cultural">Cultural Environmentalism</a></li>
           <li><a href="#hacks">Hacks</a></li>
           <li><a href="#minimalism">Minimalism</a></li>
-          <li><a href="#products">Products</a></li>
+          <li><a href=\"#store\">Store</a></li>
           <li><a href="#donate">Donate</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -208,9 +208,9 @@
       </div>
     </section>
 
-    <section class="section" id="products">
+    <section class="section" id="store">
       <div class="wrap">
-        <h3>Products</h3>
+        <h3>Store</h3>
         <p>Explore goods that reinforce our values: reusables that reduce waste, books that inform and inspire, and apparel that sparks conversation. Every product is chosen or designed to advance cultural pride, environmental stewardship, and practical wealth‑building.</p>
         <div class="grid" style="display:grid;grid-template-columns:repeat(12,1fr);gap:18px">
           <div class="card" style="grid-column:span 4">
@@ -224,6 +224,15 @@
           <div class="card" style="grid-column:span 4">
             <h4>Apparel: Black Is Green</h4>
             <p>Wear your values. Minimal designs in black/white/green on durable, long‑life fabric to avoid fast‑fashion waste.</p>
+          </div>
+          <div class="card" style="grid-column:span 6;display:flex;gap:14px;align-items:flex-start">
+            <img src="fulfilled-cover.jpg" alt="Fulfilled by C. C. North — book cover" style="width:120px;height:auto;border-radius:8px;border:1px solid #0b0b0b14"/>
+            <div>
+              <h4>FULFILLED — by C. C. North</h4>
+              <p>Fulfill7: Seven Tenets, Four Dimensions, and a Journaling Guide for Lasting Fulfillment. A practical, uplifting workbook rooted in wholeness across body, mind, soul, and spirit.</p>
+              <p><a class="btn" href="https://a.co/d/9L9vNB5" target="_blank" rel="noopener">View on Amazon</a></p>
+              <p class="mono">Place the book cover image file in your repo root as <code>fulfilled-cover.jpg</code>.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -240,7 +249,7 @@
     <section class="section" id="contact">
       <div class="wrap">
         <h3>Contact Us</h3>
-        <form action="https://formspree.io/f/xyzzzzzz" method="POST">
+        <form action=\"https://formspree.io/f/xgvlqbkw\" method="POST">
           <label>Name<br><input type="text" name="name" required style="width:100%;padding:8px;margin:6px 0"></label><br>
           <label>Email<br><input type="email" name="email" required style="width:100%;padding:8px;margin:6px 0"></label><br>
           <label>Message<br><textarea name="message" rows="5" required style="width:100%;padding:8px;margin:6px 0"></textarea></label><br>
@@ -252,8 +261,11 @@
       <div class="wrap">
         <h3>Support the Work</h3>
         <p>Your contribution helps us promote environmental awareness, build practical skills, and create resources that strengthen health, wellbeing, and generational wealth in Black communities and beyond.</p>
-        <a class="btn primary" href="#" aria-label="Donate via your preferred link">Donate Now</a>
-        <p class="mono" style="margin-top:12px;color:#555">Replace the href above with your live donation link (PayPal/Stripe/Cash App/Give).</p>
+        <div style="overflow:auto; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); box-shadow:-2px 10px 5px rgba(0,0,0,0); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif;">
+          <div style="padding:20px;">
+            <a target="_blank" data-url="https://square.link/u/bEQ5Alff?src=embd" href="https://square.link/u/bEQ5Alff?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#ffffff;min-width:212px;background-color:#006aff;text-align:center;box-shadow:0 0 0 1px rgba(0,0,0,.1) inset;border-radius:6px;">Donate</a>
+          </div>
+        </div>
       </div>
     </section>
 
