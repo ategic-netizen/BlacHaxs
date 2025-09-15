@@ -30,11 +30,15 @@
     .btn{padding:10px 18px;border-radius:6px;border:2px solid var(--green);font-weight:700;cursor:pointer}
     .btn.primary{background:var(--green);color:var(--white)}
     .btn.secondary{background:var(--white);color:var(--green)}
-    .section{padding:50px 20px;border-top:6px solid var(--green);background:var(--gray)}
+    .section{padding:50px 20px;border-top:6px solid var(--green);background:var(--gray);scroll-margin-top:90px}
     .section:nth-of-type(even){background:var(--white)}
     .section h3{color:var(--green-dark);margin-bottom:16px}
     .card{background:var(--white);border:2px solid var(--green);border-radius:10px;padding:20px;margin-bottom:20px}
     footer{background:var(--black);color:var(--white);padding:20px;text-align:center;border-top:6px solid var(--green)}
+    /* Fix list alignment */
+    ol.card{list-style-position:inside;padding-left:1rem;margin-left:0}
+    ol.card li{padding-left:.25rem}
+    html{scroll-behavior:smooth}
   </style>
 </head>
 <body>
@@ -50,7 +54,7 @@
           <li style='white-space:nowrap'><a href="#cultural">Cultural Environmentalism</a></li>
           <li><a href="#hacks">Hacks</a></li>
           <li><a href="#minimalism">Minimalism</a></li>
-          <li><a href=\"#store\">Store</a></li>
+          <li><a href="#store">Store</a></li>
           <li><a href="#donate">Donate</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -59,41 +63,52 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Fusion of Environmentalism and the Culture and Ingenuity of Black People</h2>
-      <p>Uplifting the environment and community, preserving resources, and building generational wealth.<br><strong>Environmental Consciousness in Our Communities, Across America, and Around the World for All People.</strong></p>
-      <div>
-        <a href="#about" class="btn primary">Learn More</a>
-        <a href="#donate" class="btn secondary">Donate</a>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <h2>BLACK IS GREEN — Culture × Ingenuity × Environment</h2>
+        <p><strong>Tagline:</strong> Fusion of Environmentalism and the Culture and Ingenuity of Black people to uplift the environment and community, preserve resources, and build generational wealth.</p>
+        <p><em>ENVIRONMENTAL CONSCIOUSNESS IN OUR COMMUNITIES, ACROSS AMERICA AND AROUND THE WORLD FOR ALL PEOPLE.</em></p>
+        <p>Promoting and celebrating environmental awareness in our neighborhoods, across America, and around the world. Blac Haxs promulgates environmentalism and economics in the Black community to improve health and wellbeing, peace of mind and happiness, security, and generational wealth.</p>
+        <div class="cta" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+          <a class="btn secondary" href="#hacks">Browse Hacks</a>
+          <a class="btn primary" href="#contact">Reach Out</a>
+        </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="wrap">
-        <h3>About Us</h3>
-        <p>Conceivably deriving out of necessity, African Americans and other people of color are innately conservationist. The environmentalism movement promotes the very things people of color are particularly adept: reusing, reducing, repairing, and repurposing. Still, people of color are underrepresented in environmental conversations and disproportionately impacted by environmental injustice. Pollution, lack of restoration or conservation, magnify oppression which contributes to the poor health and economic stagnation of their communities.</p>
-        <p>We started Blac Haxs to be part of “the taking charge of your own narrative” and the collective self-actualization of African American and Black community. Along the way, and with a bit of humor, we learned there are many ways for African Americans and people of color (in fact all peoples) to use a little talent and creativity to create and achieve more. We call some of these creative ways Haxs or Hacks.</p>
-        <p>Hacks are the talents, skills and creativity used that help us live more efficiently with an aim to become more environmentally aware and build Black wealth in America.</p>
-        <h4>Our Vision</h4>
-        <p>Blac Haxs promulgates environmentalism and economics in the Black community to improve health and wellbeing, peace of mind and happiness—security, and generational wealth.</p>
-        <h4>Our Mission</h4>
-        <ul>
-          <li>Promote and celebrate the talent, creativity, ingenuity, and the culture of African Americans and people of color in reusing, re-purposing, recycling, rethinking, and reenergizing.</li>
-          <li>Protect the environment, efficiently use our limited resources, and increase wealth.</li>
-          <li>Obliterate environmental oppression and injustice for African Americans and people of color.</li>
-        </ul>
+        <div class="card">
+          <span class="tag">About Us</span>
+          <h3>Why Blac Haxs?</h3>
+          <p>Conceivably deriving out of necessity, African Americans and other people of color are innately conservationist. The environmentalism movement promotes the very things people of color are particularly adept: reusing, reducing, repairing, and repurposing. Still, people of color are underrepresented in environmental conversations and disproportionately impacted by environmental injustice. Pollution, lack of restoration or conservation, magnify oppression which contributes to the poor health and economic stagnation of their communities.</p>
+          <p>We started Blac Haxs to be part of “the taking charge of your own narrative” and the collective self-actualization of the African American and Black community. Along the way, and with a bit of humor, we learned there are many ways for African Americans and people of color (in fact all peoples) to use a little talent and creativity to create and achieve more. We call some of these creative ways Haxs or Hacks. Hacks are the talents, skills and creativity used that help us live more efficiently with an aim to become more environmentally aware and build Black wealth in America.</p>
+          <h4>Vision</h4>
+          <p>Blac Haxs promulgates environmentalism and economics in the Black community to improve health and wellbeing, peace of mind and happiness—security, and generational wealth.</p>
+          <h4>Mission</h4>
+          <ul class="card">
+            <li>Promote and celebrate the talent, creativity, ingenuity, and the culture of African Americans and people of color in reusing, re-purposing, recycling, rethinking, and reenergizing, to protect the environment, efficiently use our limited resources, and increase wealth.</li>
+            <li>Obliterate environmental oppression and injustice for African Americans and people of color.</li>
+          </ul>
+          <h4>Site Sections</h4>
+          <ol class="list">
+            <li>Main page — Home & About</li>
+            <li>Cultural Environmentalism</li>
+            <li>Hacks — DIY: recycle, reuse, repurpose</li>
+            <li>Minimalism for People of Color</li>
+            <li>Store — reduce waste / reuse, books, apparel</li>
+          </ol>
+          <div class="divider"></div>
+          <p>We strongly believe in the importance of conserving the environment and the culture of Black and African Americans. Let us come together to work to promote and preserve our heritage and our traditions, so we can pass on a healthier sustainable world to the next generation. <strong>#UsGotUs</strong></p>
+          <p>There is solidarity in our people because of the shared culture and values. In our shared strengths, we can <strong>#SaveOurselves</strong> knowing that <strong>#WeGotUs</strong>. We will work with and share with people of all colors in this country, and the rest of the world, efforts for living a more sustainable life and flourishing in a world without poverty or oppression. Because … under the sun, we are all one people.</p>
+        </div>
       </div>
     </section>
 
+    <!-- CULTURAL ENVIRONMENTALISM -->
     <section class="section" id="cultural">
-      <div class="wrap">
-        <h3>Cultural Environmentalism</h3>
-        <p>We strongly believe in the importance of conserving the environment and the culture of Black and African Americans. Let us come together to promote and preserve our heritage and traditions, so we can pass on a healthier sustainable world to the next generation. <strong>#UsGotUs</strong></p>
-        <p>There is solidarity in our people because of the shared culture and values. In our shared strengths, we can <strong>#SaveOurselves</strong> knowing that <strong>#WeGotUs</strong>. We will work with and share with people of all colors in this country, and the rest of the world, efforts for living a more sustainable life and flourishing in a world without poverty or oppression. Because … under the sun, we are all one people.</p>
-      </div>
-    </section>
-
-    <section class="section alt" id="cultural">
       <div class="wrap">
         <h3>Cultural Environmentalism</h3>
         <p>Environmentalism in Black communities is not a trend; it is a living memory and a living practice. Historically, families stretched resources through repairing, reusing, mending, and sharing—long before these practices were branded as green. Grandparents rinsed jars to store staples, hemmed clothing to pass down to siblings, and cultivated small garden plots to supplement food budgets and increase nutrition. These practices protected health, conserved money, and strengthened bonds.</p>
@@ -104,11 +119,13 @@
       </div>
     </section>
 
-    <section class="section alt" id="hacks">
+    <!-- HACKS -->
+    <section class="section" id="hacks">
       <div class="wrap">
         <h3>Hacks</h3>
-        <p><strong>Hacks</strong> are any procedure, action, productivity trick, shortcut, skill, or novelty method to increase productivity and efficiency. These hacks are used in all walks of life to solve a problem, simplify a task, and reduce frustration in one's everyday life.</p>
+        <p><strong>Hacks</strong> are any procedure, action, productivity trick, shortcut, skill, or novelty method to increase productivity and efficiency. These hacks are used in all walks of life to solve a problem, simplify a task, and reduce frustration, in one's everyday life.</p>
         <p><strong>The BLACK life hacks</strong> celebrate and promote the culture and ingenuity of African Americans and people of color that protect the environment and conserve our precious resources by reusing, recycling, and repurposing. Some of these life hacks will help save money that can be used to build generational wealth. Some will be for fun. Join us and DIY or HAXS to reuse, reduce, reimagine those things around us to make us better conscientious stewards of our money and other resources. We will make this a better world for African Americans by <strong>#SavingOurselves</strong> and invite all to join us in making this a better world for everyone and every living thing in our global community.</p>
+
         <div class="divider"></div>
         <h4>Recent Hacks &amp; Notes</h4>
         <div class="grid" style="display:grid;grid-template-columns:repeat(12,1fr);gap:18px">
@@ -176,38 +193,42 @@
       </div>
     </section>
 
+    <!-- MINIMALISM -->
     <section class="section" id="minimalism">
       <div class="wrap">
         <h3>Minimalism for People of Color</h3>
-        <p>We take pride in having “made it”. Often, we demonstrate “making it” by showcasing things. Reaching success may be represented by the amount that was spent or the number of things we have. For some, it may be an attempt to overcome the effects of white supremacy and oppression. However, in our efforts to “show” what we have, we decrease the value of our culture and destroy attaining generational wealth. It is not only counterproductive to buy what you don’t really need just to make a statement, but it magnifies the assault on the Black dollar, because our money goes right back into the hands of those outside of our community.</p>
-        <p>We need to focus on our community and our environment by taking special care of our resources and slow ourselves down to build ourselves up. We support the adoption of the minimalist lifestyle. Minimalism is a way of life where you are free to do more that is meaningful, have more of what is meaningful, which strongholds the well-being of you, your family and your community. This way may not be for everyone but for many it has allowed a greater sense of freedom.</p>
-        <div class="divider"></div>
-        <h4>The benefits of minimalism are:</h4>
-        <ol class="card">
-          <li>Clarity and Peace of mind — by removing excess, your decisions become simpler and your daily life becomes calmer, reducing the noise that competes for your attention.</li>
-          <li>Better health — less clutter lowers stress, which can improve sleep, diet choices, and overall physical and mental health.</li>
-          <li>More room in your heart instead of using it to store your love for your “treasures” — valuing people and purpose over possessions opens space for relationships and growth.</li>
-          <li>Be an example for your family and community — practicing restraint and intentionality can inspire others to live within their means and prioritize what matters.</li>
-          <li>Less stress — fewer obligations to maintain, clean, and upgrade leaves more energy for creativity and rest.</li>
-          <li>Cleaner home — with fewer items, organization is easier; surfaces and rooms breathe, creating a healthier environment.</li>
-          <li>Getting to know the Joneses instead of trying to keep up with them — relationships replace competition, strengthening neighborhood bonds.</li>
-          <li>Be more productive — a focused space supports focused work and learning without the drag of constant distraction.</li>
-          <li>More time — spend less time shopping, cleaning, and repairing; spend more time with family, faith, service, and joy.</li>
-          <li>Greater purpose — when clutter leaves, purpose enters; you can align daily actions with your calling.</li>
-          <li>Leaving the past in the past — releasing items tied to hurt or nostalgia frees you to live in the present.</li>
-          <li>Have more things of quality vs quantity — investing in durable, sustainable items reduces waste and long‑term cost.</li>
-          <li>Extra money — fewer impulse buys and redundant items mean more savings and margin for investing.</li>
-          <li>Saving the environment — buying and discarding less lowers resource use and landfill burden; reusing and repairing extend life cycles.</li>
-          <li>Showing yourself and the world what you value most — your space becomes a testimony to your priorities and culture.</li>
-          <li>Better relationships — less clutter, more eye contact; less spending, more giving; more presence, less pressure.</li>
-          <li>Leaving more for the next generation — wealth transfers more easily when it isn’t trapped in depreciating stuff.</li>
-          <li>Lifetime memories — experiences and service create stories that possessions can’t match.</li>
-          <li>Ability to do the work you love — reduced expenses expand your options to pursue calling over mere income.</li>
-          <li>And much more — minimalism is a practice, not perfection; it adapts with seasons and culture to keep you free.</li>
-        </ol>
+        <div class="card">
+          <p>We take pride in having “made it”. Often, we demonstrate “making it” by showcasing things. Reaching success may be represented by the amount that was spent or the number of things we have. For some, it may be an attempt to overcome the effects of white supremacy and oppression. However, in our efforts to “show” what we have, we decrease the value of our culture and destroy attaining generational wealth. It is not only counterproductive to buy what you don’t really need just to make a statement, but it magnifies the assault on the Black dollar, because our money goes right back into the hands of those outside of our community.</p>
+          <p>We need to focus on our community and our environment by taking special care of our resources and slow ourselves down to build ourselves up. We support the adoption of the minimalist lifestyle. Minimalism is a way of life where you are free to do more that is meaningful, have more of what is meaningful, which strongholds the well-being of you, your family and your community. This way may not be for everyone but for many it has allowed a greater sense of freedom.</p>
+          <div class="divider"></div>
+          <h4>The benefits of minimalism are:</h4>
+          <ol class="card">
+            <li>Clarity and Peace of mind — by removing excess, your decisions become simpler and your daily life becomes calmer, reducing the noise that competes for your attention.</li>
+            <li>Better health — less clutter lowers stress, which can improve sleep, diet choices, and overall physical and mental health.</li>
+            <li>More room in your heart instead of using it to store your love for your “treasures” — valuing people and purpose over possessions opens space for relationships and growth.</li>
+            <li>Be an example for your family and community — practicing restraint and intentionality can inspire others to live within their means and prioritize what matters.</li>
+            <li>Less stress — fewer obligations to maintain, clean, and upgrade leaves more energy for creativity and rest.</li>
+            <li>Cleaner home — with fewer items, organization is easier; surfaces and rooms breathe, creating a healthier environment.</li>
+            <li>Getting to know the Joneses instead of trying to keep up with them — relationships replace competition, strengthening neighborhood bonds.</li>
+            <li>Be more productive — a focused space supports focused work and learning without the drag of constant distraction.</li>
+            <li>More time — spend less time shopping, cleaning, and repairing; spend more time with family, faith, service, and joy.</li>
+            <li>Greater purpose — when clutter leaves, purpose enters; you can align daily actions with your calling.</li>
+            <li>Leaving the past in the past — releasing items tied to hurt or nostalgia frees you to live in the present.</li>
+            <li>Have more things of quality vs quantity — investing in durable, sustainable items reduces waste and long‑term cost.</li>
+            <li>Extra money — fewer impulse buys and redundant items mean more savings and margin for investing.</li>
+            <li>Saving the environment — buying and discarding less lowers resource use and landfill burden; reusing and repairing extend life cycles.</li>
+            <li>Showing yourself and the world what you value most — your space becomes a testimony to your priorities and culture.</li>
+            <li>Better relationships — less clutter, more eye contact; less spending, more giving; more presence, less pressure.</li>
+            <li>Leaving more for the next generation — wealth transfers more easily when it isn’t trapped in depreciating stuff.</li>
+            <li>Lifetime memories — experiences and service create stories that possessions can’t match.</li>
+            <li>Ability to do the work you love — reduced expenses expand your options to pursue calling over mere income.</li>
+            <li>And much more — minimalism is a practice, not perfection; it adapts with seasons and culture to keep you free.</li>
+          </ol>
+        </div>
       </div>
     </section>
 
+    <!-- STORE -->
     <section class="section" id="store">
       <div class="wrap">
         <h3>Store</h3>
@@ -226,54 +247,32 @@
             <p>Wear your values. Minimal designs in black/white/green on durable, long‑life fabric to avoid fast‑fashion waste.</p>
           </div>
           <div class="card" style="grid-column:span 6;display:flex;gap:14px;align-items:flex-start">
-            <img src="fulfilled-cover.jpg" alt="Fulfilled by C. C. North — book cover" style="width:120px;height:auto;border-radius:8px;border:1px solid #0b0b0b14"/>
+            <img src="Ebook (kpf).jpg" alt="Fulfilled by C. C. North — book cover" style="width:120px;height:auto;border-radius:8px;border:1px solid #0b0b0b14"/>
             <div>
               <h4>FULFILLED — by C. C. North</h4>
               <p>Fulfill7: Seven Tenets, Four Dimensions, and a Journaling Guide for Lasting Fulfillment. A practical, uplifting workbook rooted in wholeness across body, mind, soul, and spirit.</p>
               <p><a class="btn" href="https://a.co/d/9L9vNB5" target="_blank" rel="noopener">View on Amazon</a></p>
-              <p class="mono">Place the book cover image file in your repo root as <code>fulfilled-cover.jpg</code>.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- DONATE -->
     <section class="section" id="donate">
-      <div class="wrap">
-        <h3>Donate</h3>
-        <p>Your support helps us continue promoting environmental awareness and economic empowerment in our communities.</p>
-        <a href="#" class="btn primary">Donate Now</a>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="wrap">
-        <h3>Contact Us</h3>
-        <form action=\"https://formspree.io/f/xgvlqbkw\" method="POST">
-          <label>Name<br><input type="text" name="name" required style="width:100%;padding:8px;margin:6px 0"></label><br>
-          <label>Email<br><input type="email" name="email" required style="width:100%;padding:8px;margin:6px 0"></label><br>
-          <label>Message<br><textarea name="message" rows="5" required style="width:100%;padding:8px;margin:6px 0"></textarea></label><br>
-          <button type="submit" class="btn primary">Send</button>
-        </form>
-      </div>
-    </section>
-    <section class="section alt" id="donate">
       <div class="wrap">
         <h3>Support the Work</h3>
         <p>Your contribution helps us promote environmental awareness, build practical skills, and create resources that strengthen health, wellbeing, and generational wealth in Black communities and beyond.</p>
-        <div style="overflow:auto; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); box-shadow:-2px 10px 5px rgba(0,0,0,0); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif;">
-          <div style="padding:20px;">
-            <a target="_blank" data-url="https://square.link/u/bEQ5Alff?src=embd" href="https://square.link/u/bEQ5Alff?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#ffffff;min-width:212px;background-color:#006aff;text-align:center;box-shadow:0 0 0 1px rgba(0,0,0,.1) inset;border-radius:6px;">Donate</a>
-          </div>
-        </div>
+        <div> <div style=" overflow: auto; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; width: 259px; background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: -2px 10px 5px rgba(0, 0, 0, 0); border-radius: 10px; font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif; "> <div style="padding: 20px;"> <a id="embedded-checkout-modal-checkout-button" target="_blank" data-url="https://square.link/u/bEQ5Alff?src=embd" href="https://square.link/u/bEQ5Alff?src=embed" style=" display: inline-block; font-size: 18px; line-height: 48px; height: 48px; color: #ffffff; min-width: 212px; background-color: #006aff; text-align: center; box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset; border-radius: 6px; ">Donate</a> </div> </div> <script> function showCheckoutWindow(e) { e.preventDefault(); const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url'); const title = 'Square Payment Links'; const topWindow = window.top ? window.top : window; const dualScreenLeft = topWindow.screenLeft !== undefined ? topWindow.screenLeft : topWindow.screenX; const dualScreenTop = topWindow.screenTop !== undefined ? topWindow.screenTop : window.screenY; const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width; const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height; const h = height * .75; const w = 500; const systemZoom = width / topWindow.screen.availWidth; const left = (width - w) / 2 / systemZoom + dualScreenLeft; const top = (height - h) / 2 / systemZoom + dualScreenTop; const newWindow = window.open(url, title, `scrollbars=yes,width=${w / systemZoom},height=${h / systemZoom},top=${top},left=${left}`); if (window.focus) newWindow.focus(); } document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) { showCheckoutWindow(e); }); </script> </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="wrap">
         <h3>Contact Us</h3>
         <p>Questions, ideas, or a hack to share? Send us a note.</p>
-        <form action="https://formspree.io/f/xyzzzzzz" method="POST" onsubmit="this.querySelector('button').disabled=true" class="card" style="max-width:720px">
+        <form action="https://formspree.io/f/xgvlqbkw" method="POST" onsubmit="this.querySelector('button').disabled=true" class="card" style="max-width:720px">
           <label>Name<br><input required name="name" placeholder="Your name" style="width:100%;padding:.7rem;border-radius:10px;border:2px solid #0b0b0b22;background:#ffffff;color:#0a0a0a" /></label>
           <br><br>
           <label>Email<br><input required type="email" name="email" placeholder="you@example.com" style="width:100%;padding:.7rem;border-radius:10px;border:2px solid #0b0b0b22;background:#ffffff;color:#0a0a0a" /></label>
@@ -281,11 +280,9 @@
           <label>Message<br><textarea required name="message" rows="6" placeholder="Share a hack, question, or idea…" style="width:100%;padding:.7rem;border-radius:10px;border:2px solid #0b0b0b22;background:#ffffff;color:#0a0a0a"></textarea></label>
           <br><br>
           <button class="btn primary" type="submit">Send</button>
-          <p class="mono" style="margin-top:8px;color:#555">Swap the <code>action</code> with your real Formspree endpoint to activate this form.</p>
         </form>
       </div>
     </section>
-
   </main>
 
   <footer>
